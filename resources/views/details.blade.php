@@ -11,7 +11,7 @@
     </div>
     <div class="card-body">
       <p class="card-text">{{ $todos->description }}.</p>
-      <a href="edit/{{ $todos->id }}"><span class="btn btn-primary">Edit</span></a>
+      <a href="/edit/{{ $todos->id }}"><span class="btn btn-primary">Edit</span></a>
       <a href="/delete/{{$todos->id}}"><span class="btn btn-danger">Delete</span></a>
     </div>
   </div>

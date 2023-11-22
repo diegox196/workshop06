@@ -23,9 +23,9 @@ class TodoController extends Controller
     return view('details')->with('todos', $todo);
   }
 
-  public function edit()
+  public function edit(Todo $todo)
   {
-    return view('edit');
+    return view('edit')->with('todos', $todo);
   }
 
   public function update(Todo $todo)
